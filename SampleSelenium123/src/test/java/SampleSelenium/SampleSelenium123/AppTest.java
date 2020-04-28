@@ -22,4 +22,9 @@ public class AppTest
     {
         assertTrue( false==false );
     }
+    @Test
+    public void shouldAnswerWithData()
+    {
+        assertTrue( false );
+    }
 }
