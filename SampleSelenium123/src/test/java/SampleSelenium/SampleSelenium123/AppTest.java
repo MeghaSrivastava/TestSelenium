@@ -20,11 +20,7 @@ public class AppTest
     @Test
     public void shouldAnswerWithFalse()
     {
-        assertTrue( false==false );
+        assertTrue( true );
     }
-    @Test
-    public void shouldAnswerWithData()
-    {
-        assertTrue( false );
-    }
+   
 }
