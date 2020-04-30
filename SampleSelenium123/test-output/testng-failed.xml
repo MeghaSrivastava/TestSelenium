@@ -8,7 +8,7 @@
     <classes>
       <class name="seleniumTest.AppTest">
         <methods>
-          <include name="loginValid"/>
+          <include name="loginInvalid"/>
           <include name="openUrl"/>
         </methods>
       </class> <!-- seleniumTest.AppTest -->
