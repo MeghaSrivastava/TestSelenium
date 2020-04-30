@@ -48,7 +48,7 @@ public class AppTest
     	driver.findElement(By.id("password")).sendKeys("htp@1234");
     	driver.findElement(By.id("Login")).click();
     	
-    	Assert.assertNotEquals(driver.getTitle(), "Login | Salesforce");
+    	Assert.assertEquals(driver.getTitle(), "Home Page ~ Salesforce - Developer Edition");
     	
     }
    @Test(priority=2)
