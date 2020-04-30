@@ -35,11 +35,11 @@ public class AppTest
     	driver.findElement(By.id("username")).sendKeys("megha@gmail.com");
     	driver.findElement(By.id("password")).sendKeys("abc@1234");
     	driver.findElement(By.id("Login")).click();
-    	Thread.sleep(2000);
+    	
     	String str=driver.findElement(By.className("loginError")).getText();
     	
-    	System.out.println(str+"Megha");
-    	Assert.assertNotEquals(str, "Please check your username and password. "
+    	
+    	Assert.assertEquals(str, "Please check your username and password. "
     			+ "If you still can't log in, contact your Salesforce administrator.");
     	
     	
