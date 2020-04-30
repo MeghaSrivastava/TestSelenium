@@ -33,7 +33,7 @@ public class AppTest
     @Test(priority=0)
     public void loginInvalid() {
     	driver.findElement(By.id("username")).sendKeys("megha@gmail.com");
-    	driver.findElement(By.id("password")).sendKeys("htp@1234");
+    	driver.findElement(By.id("password")).sendKeys("abc@1234");
     	driver.findElement(By.id("Login")).click();
     	String str=driver.findElement(By.id("error")).getText();
     	Assert.assertEquals(str, "Please check your username and password. "

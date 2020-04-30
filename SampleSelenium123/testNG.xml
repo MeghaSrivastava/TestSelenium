@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Test Suite" >
-
+<listeners>
+		<listener class-name="listener.Listener" />
+		
+</listeners>
 <test name="Execute Smoke test ">
 
 <classes>
@@ -9,3 +12,4 @@
 </classes>
 </test>
 </suite>
+
