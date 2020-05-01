@@ -61,7 +61,7 @@ public class AppTest
     	driver.findElement(By.id("Login")).click();
     	
     	//Assert.assertEquals(driver.getTitle(),"Home Page ~ Salesforce - Developer Edition");
-    	Assert.assertTrue(true);
+    	Assert.assertTrue(false);
     }
    @Test(priority=4)
    public void tearDown() {
