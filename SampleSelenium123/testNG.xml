@@ -6,10 +6,12 @@
 		
 </listeners>
 <test name="Execute Smoke test ">
+<parameter name="Url" value="${URL}"></parameter>
 
 <classes>
 <class name="seleniumTest.AppTest"></class>
 </classes>
 </test>
 </suite>
+
 
