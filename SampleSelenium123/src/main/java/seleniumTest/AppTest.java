@@ -30,16 +30,16 @@ public class AppTest
 
    }
 
-   @Parameters({"Url"})
+    @Parameters({"Url"})
    @Test(priority=1)
    public void openURL(String Url) {
 	   System.out.println(Url);
 	   driver.get(Url);
-	   
-	   Assert.assertEquals(driver.getTitle(), "Login | Salesforce");
+	   Assert.assertTrue(false);
+	  // Assert.assertEquals(driver.getTitle(), "Login | Salesforce");
    }
     
-    @Test(priority=2)
+   /* @Test(priority=2)
     public void loginInvalid() throws InterruptedException {
     	driver.findElement(By.id("username")).sendKeys("megha@gmail.com");
     	driver.findElement(By.id("password")).sendKeys("abc@1234");
@@ -62,7 +62,7 @@ public class AppTest
     	
     	//Assert.assertEquals(driver.getTitle(),"Home Page ~ Salesforce - Developer Edition");
     	Assert.assertTrue(true);
-    }
+    }*/
    @Test(priority=4)
    public void tearDown() {
 	   driver.close();
