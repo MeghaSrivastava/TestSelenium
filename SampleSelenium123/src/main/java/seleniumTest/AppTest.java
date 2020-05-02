@@ -41,8 +41,8 @@ public class AppTest
     @Parameters({"UserName","Password"})
     @Test(priority=2)
     public void loginInvalid(String UserName,String Password) throws InterruptedException {
-    	System.out.println(UserName);
-    	System.out.println(Password);
+    	System.out.println(UserName+ "megha");
+    	System.out.println(Password+ "megha");
     	driver.findElement(By.id("username")).sendKeys(UserName);
     	driver.findElement(By.id("password")).sendKeys(Password);
     	driver.findElement(By.id("Login")).click();
