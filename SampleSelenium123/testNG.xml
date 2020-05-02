@@ -7,7 +7,8 @@
 </listeners>
 <test name="Execute Smoke test ">
 <parameter name="Url" value="${URL}"></parameter>
-
+<parameter name="UserName" value="${USERNAME}"></parameter>
+<parameter name="Password" value="${PASSWORD}"></parameter>
 <classes>
 <class name="seleniumTest.AppTest"></class>
 </classes>

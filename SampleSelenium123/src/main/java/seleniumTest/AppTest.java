@@ -38,11 +38,11 @@ public class AppTest
 	   
 	   Assert.assertEquals(driver.getTitle(), "Login | Salesforce");
    }
-    
+    @Parameters({"UserName","Password"})
     @Test(priority=2)
-    public void loginInvalid() throws InterruptedException {
-    	driver.findElement(By.id("username")).sendKeys("megha@gmail.com");
-    	driver.findElement(By.id("password")).sendKeys("abc@1234");
+    public void loginInvalid(String UserName,String Password) throws InterruptedException {
+    	driver.findElement(By.id("username")).sendKeys(UserName);
+    	driver.findElement(By.id("password")).sendKeys(Password);
     	driver.findElement(By.id("Login")).click();
     	
     	//String str=driver.findElement(By.className("loginError")).getText();
