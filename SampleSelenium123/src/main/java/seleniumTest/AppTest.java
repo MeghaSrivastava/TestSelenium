@@ -55,11 +55,13 @@ public class AppTest
     	
     	Assert.assertTrue(true);
     }
+    @Parameters({"UserNameValid","PasswordValid"})
     @Test(priority=3)
-    public void loginValid() throws InterruptedException {
-    	
-    	driver.findElement(By.id("username")).sendKeys("cicd.tier1@gmail.com");
-    	driver.findElement(By.id("password")).sendKeys("htp@1234");
+    public void loginValid(String UserNameValid,String PasswordValid) throws InterruptedException {
+    	System.out.println(UserNameValid+ "megha");
+    	System.out.println(PasswordValid+ "megha");
+    	driver.findElement(By.id("username")).sendKeys(UserNameValid);
+    	driver.findElement(By.id("password")).sendKeys(PasswordValid);
     	driver.findElement(By.id("Login")).click();
     	
     	//Assert.assertEquals(driver.getTitle(),"Home Page ~ Salesforce - Developer Edition");
