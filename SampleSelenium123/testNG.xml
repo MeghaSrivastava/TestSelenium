@@ -7,8 +7,7 @@
 </listeners>
 <test name="Execute Smoke test ">
 <parameter name="Url" value="${URL}"></parameter>
-<parameter name="UserName" value="${USERNAME}"></parameter>
-<parameter name="Password" value="${PASSWORD}"></parameter>
+
 <parameter name="UserNameValid" value="${USERNAMEVALID}"></parameter>
 <parameter name="PasswordValid" value="${PASSWORDVALID}"></parameter>
 <classes>
