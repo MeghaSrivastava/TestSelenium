@@ -65,9 +65,16 @@ public class AppTest
     	//Assert.assertEquals(driver.getTitle(),"Home Page ~ Salesforce - Developer Edition");
     	Assert.assertTrue(true);
     }
-   @Test(priority=4)
+    @Test(priority=4)
+    public void logout() {
+ 	   driver.findElement(By.cssSelector("#\\31 48\\:233\\;a > span.photoContainer.forceSocialPhoto > div > span")).click();
+ 	   driver.findElement(By.cssSelector("#content_107\\:1872\\;a > div > div.profile-card-indent > div > a.profile-link-label.logout.uiOutputURL")).click();
+ 	  
+    }
+   @Test(priority=5)
    public void tearDown() {
 	   driver.close();
    }
+  
    
 }
