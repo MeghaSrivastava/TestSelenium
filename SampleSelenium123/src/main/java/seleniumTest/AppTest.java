@@ -66,13 +66,13 @@ public class AppTest
     	Assert.assertTrue(true);
     }
     
-   /* @Test(priority=4)
+    @Test(priority=4)
     public void logout() {
- 	   driver.findElement(By.xpath("//*[@id=\"148:233;a\"]/span[1]/div/span")).click();
- 	   driver.findElement(By.xpath("//*[@id=\"content_111:2931;a\"]/div/div[2]/div/a[2]")).click();
+ 	   driver.findElement(By.className("uiImage")).click();
+ 	   driver.findElement(By.className("logout")).click();
  	  
-    }*/
-   @Test(priority=4)
+    }
+   @Test(priority=5)
    public void tearDown() {
 	   driver.close();
    }
