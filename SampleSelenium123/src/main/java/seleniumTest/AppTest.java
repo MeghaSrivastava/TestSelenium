@@ -68,8 +68,8 @@ public class AppTest
     
     @Test(priority=4)
     public void logout() {
- 	   driver.findElement(By.xpath("//*[@id=\"478:80;a\"]/button")).click();
- 	   driver.findElement(By.xpath("//*[@id=\"content_111:2720;a\"]/div/div[2]/div/a[2]")).click();
+ 	   driver.findElement(By.xpath("//*[@id=\"148:233;a\"]/span[1]/div/span")).click();
+ 	   driver.findElement(By.xpath("//*[@id=\"content_111:2931;a\"]/div/div[2]/div/a[2]")).click();
  	  
     }
    @Test(priority=5)
