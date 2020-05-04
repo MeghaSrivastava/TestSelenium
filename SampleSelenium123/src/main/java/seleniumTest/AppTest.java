@@ -66,13 +66,13 @@ public class AppTest
     	Assert.assertTrue(true);
     }
     
-    @Test(priority=4)
+   /* @Test(priority=4)
     public void logout() {
  	   driver.findElement(By.className("uiImage")).click();
  	   driver.findElement(By.className("profile-link-label logout uiOutputURL")).click();
  	  
-    }
-   @Test(priority=5)
+    }*/
+   @Test(priority=4)
    public void tearDown() {
 	   driver.close();
    }
