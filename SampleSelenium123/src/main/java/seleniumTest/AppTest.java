@@ -57,8 +57,7 @@ public class AppTest
     @Parameters({"UserNameValid","PasswordValid"})
     @Test(priority=3)
     public void loginValid(String UserNameValid,String PasswordValid) throws InterruptedException {
-    	System.out.println(UserNameValid+ "megha");
-    	System.out.println(PasswordValid+ "megha");
+    	
     	driver.findElement(By.id("username")).sendKeys(UserNameValid);
     	driver.findElement(By.id("password")).sendKeys(PasswordValid);
     	driver.findElement(By.id("Login")).click();
