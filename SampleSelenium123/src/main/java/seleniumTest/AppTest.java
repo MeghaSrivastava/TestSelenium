@@ -69,7 +69,7 @@ public class AppTest
     @Test(priority=4)
     public void logout() {
  	   driver.findElement(By.className("uiImage")).click();
- 	   driver.findElement(By.xpath("//*[@id=\"content_111:3232;a\"]/div/div[2]/div/a[2]")).click();
+ 	   driver.findElement(By.className("profile-link-label logout uiOutputURL")).click();
  	  
     }
    @Test(priority=5)
